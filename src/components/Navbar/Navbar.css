@@ -1,0 +1,47 @@
+.Navbar-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.Page-Header {
+    font-family: 'Permanent Marker';
+    transform: rotate(-3deg);
+    display: inline-block;
+    letter-spacing: 2px;
+    color: #E44242;
+    font-size: 35px;
+}
+
+.Navbar-Links {
+    font-family: 'Architects Daughter';
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+}
+
+.Navbar-Links li {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .Navbar-Container {
+        flex-direction: column;
+        gap: 10px; 
+        text-align: center;
+    }
+
+    .Page-Header {
+        font-size: 24px;
+        transform: rotate(-2deg);
+    }
+
+    .Navbar-Links {
+        gap: 20px;
+        font-size: 24px;
+        justify-content: center;
+    }
+}

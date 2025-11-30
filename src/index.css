@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Reenie+Beanie&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfbf7;
+
+  background-image: linear-gradient(#e1e1e1 1px, transparent 1px),
+
+    linear-gradient(90deg, #e1e1e1 1px, transparent 1px);
+
+  background-size: 100% 2rem, 2rem 100%;
+  padding: 30px 80px 20px 80px;
+  
+}
+
+.Pencil-Color{
+  color: #2f2f2f;
+}
+
+@media (max-width:768px){
+  body{
+    padding: 30px 40px 20px 40px;
+  }
+}

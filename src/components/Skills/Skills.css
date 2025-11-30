@@ -1,0 +1,58 @@
+.Skills-Header {
+    font-family: "Permanent Marker";
+    text-align: center;
+    text-decoration: wavy;
+    text-decoration-line: underline;
+    font-size: 50px;
+}
+
+.Skills-Container {
+    margin-top: 30px;
+
+}
+
+.Sticky {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.Sticky ul{
+    list-style: none;
+}
+
+.Note {
+    height: 250px;
+    width: 250px;
+    background-color: #FFEB7F;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    font-family: "Architects Daughter";
+    position: relative;
+}
+
+.Note h3{
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.Push-Pin{
+    position: absolute;
+    width: 50px;
+    top: 2px;
+    left: 35%;
+
+}
+
+
+@media (max-width:768px) {
+    .Skills-Header {
+        font-size: 36px;
+    }
+}

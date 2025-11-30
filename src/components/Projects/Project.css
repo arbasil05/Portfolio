@@ -1,0 +1,185 @@
+.Project-Header h1 {
+    font-family: "Permanent Marker";
+    text-align: center;
+    text-decoration: wavy;
+    text-decoration-line: underline;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.Project-Container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Flip-Notebook {
+    height: 450px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    font-family: "Reenie Beanie";
+    padding-top: 20px;
+}
+
+.Flip-Parent {
+    position: relative;
+}
+
+.Spiral {
+    position: absolute;
+    width: 40px;
+    top: 0px;
+    left: -6%;
+}
+
+.project-info-left {
+    position: absolute;
+    left: -100%;
+    top: 120px;
+    font-family: "Reenie Beanie";
+    font-size: 40px;
+    /* transform: rotate(-15deg); */
+}
+
+.project-info-right {
+    position: absolute;
+    top: 80px;
+    left: 130%;
+    font-family: "Reenie Beanie";
+
+}
+
+.project-info-right{
+    width: 170px;
+    font-family: "Reenie Beanie";
+    font-size: 40px;
+    /* transform: rotate(15deg); */
+}
+
+.Project1 {
+
+    text-align: center;
+    position: relative;
+}
+
+.Project1 h1 {
+    color: #e35642;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+.Project1-Desc {
+    margin-left: 20px;
+    font-size: 23px;
+}
+
+.Mern {
+    position: absolute;
+    width: 100px;
+    top: -10px;
+    left: 65%;
+    transform: rotate(8deg);
+}
+
+.Project1-Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Project1-Repo {
+    font-family: "Reenie Beanie";
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 250px 5px 200px 30px / 20px 220px 15px 230px;
+    width: 100px;
+    text-align: center;
+    /* padding: 5px; */
+    margin-top: 30px;
+    margin-left: 20px;
+    /* text-align: center; */
+}
+
+.Project1-Repo:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Project1-Live:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+.Project1-Live {
+    font-family: "Reenie Beanie";
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 250px 5px 200px 30px / 20px 220px 15px 230px;
+    width: 100px;
+    text-align: center;
+    /* padding: 5px; */
+    margin-top: 30px;
+    margin-left: 20px;
+    /* text-align: center; */
+}
+
+.FB-Arrow {
+    width: 200px;
+}
+
+.Notebook-Arrows {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.Notebook-Arrows button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Notebook-Arrows img {
+    width: 100px;
+    height: 100px;
+}
+
+.Previous {
+    transform: rotate(180deg);
+    margin-top: 10px;
+}
+
+
+@media (max-width:768px) {
+    .Flip-Notebook {
+        height: 380px;
+        width: 300px;
+        background-color: white;
+    }
+
+    .Spiral {
+        top: 0px;
+        left: -7%;
+
+    }
+
+    .project-info-left {
+        display: none;
+    }
+
+    .project-info-right {
+        display: none;
+    }
+
+}

@@ -1,0 +1,136 @@
+.Contact-Header {
+    font-size: 30px;
+    font-family: 'Permanent Marker';
+}
+
+.Contact-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.Contact-Note {
+    margin-top: 40px;
+    width: 650px;
+    background-color: white;
+    padding: 50px 20px 30px 20px;
+    font-family: "Architects Daughter";
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Contact-Parent {
+    position: relative;
+}
+
+.Binder {
+    position: absolute;
+    width: 200px;
+    top: 1px;
+    transform: rotate(90deg);
+}
+
+/* ------------------------- */
+/*   CLEAN NEW CONTACT ITEM  */
+/* ------------------------- */
+
+.Contact-Item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-Header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #E44242;
+    font-size: 28px;
+}
+
+#LinkedIn {
+    width: 25px;
+}
+
+#Github-Icon {
+    width: 30px;
+}
+
+.Item-Header img {
+    width: 40px;
+}
+
+.Item-Value {
+    font-size: 22px;
+    padding-left: 10px;
+    color: #26347F;
+}
+
+.Item-Value a {
+    color: #26347F;
+    text-decoration: none;
+}
+
+.Pen {
+    position: absolute;
+    width: 700px;
+    left: -45%;
+    top: 8px;
+    filter: drop-shadow(-8px 0px 10px rgba(0, 0, 0, 0.3));
+}
+
+.Scribble {
+    position: absolute;
+    width: 200px;
+    left: 70%;
+    top: 280px;
+}
+
+/* ------------------------- */
+/*         MOBILE            */
+/* ------------------------- */
+
+@media (max-width:768px) {
+    .Contact-Note {
+        width: 300px;
+        gap: 30px;
+    }
+
+    .Item-Header {
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    .Item-Header img {
+        width: 25px;
+    }
+
+    .Item-Value {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .Pen {
+        position: absolute;
+        width: 600px;
+        left: -92%;
+        top: 8px;
+    }
+
+    .Scribble {
+        position: absolute;
+        width: 90px;
+        left: 70%;
+        top: 280px;
+    }
+}

@@ -1,0 +1,237 @@
+.Hero-Container {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.Hero-Text {
+    font-size: 40px;
+    font-family: 'Permanent Marker';
+}
+
+.Hero-Text p {
+    font-size: smaller;
+    text-align: center;
+    color: #264DE4;
+}
+
+
+
+.Image-Card {
+    position: relative;
+    background-color: white;
+    height: 450px;
+    width: 350px;
+    margin-top: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transform: rotate(-3deg);
+    padding: 20px 20px 80px 20px;
+}
+
+.Tape {
+    position: absolute;
+    top: -20px;
+    /* overlaps the top edge */
+    left: 50%;
+    /* center horizontally */
+    transform: translateX(-50%) rotate(-15deg);
+    /* small tilt for realism */
+    width: 200px;
+    /* adjust tape size */
+    pointer-events: none;
+    /* so it doesn’t interfere with clicks */
+    z-index: 10;
+    /* on top of the card */
+}
+
+.Hero-Description {
+    position: relative;
+    margin-top: 40px;
+    border: 2px solid transparent;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    padding: 20px;
+    background-color: #FFFB7D;
+}
+
+.Paper-Clip {
+    position: absolute;
+    /* overlaps the top edge */
+    top: -73.5px;
+    left: 96%;
+    /* center horizontally */
+    transform: translateX(-50%) rotate(-5deg);
+    /* small tilt for realism */
+    width: 200px;
+    /* adjust tape size */
+    pointer-events: none;
+    /* so it doesn’t interfere with clicks */
+    z-index: 10;
+}
+
+.Hero-Description p {
+    color: #2f2f2f;
+    font-family: "Reenie Beanie";
+}
+
+.Image-Inside-Card {
+    height: 100%;
+    width: 100%;
+}
+
+.Image-Inside-Card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.Image-Name {
+    font-family: "Reenie Beanie";
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    color: #264DE4;
+}
+
+
+.button {
+    font-family: "Reenie Beanie";
+    font-size: 26px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 250px 5px 200px 30px / 20px 220px 15px 230px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 240px 15px 225px 20px / 10px 230px 25px 210px;
+}
+
+.Button-Parent {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+
+.Github-Button-Container {
+    position: relative;
+}
+
+.Git-button {
+    position: relative;
+    z-index: 2;
+    font-family: "Reenie Beanie";
+    font-size: 26px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 250px 5px 200px 30px / 20px 220px 15px 230px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+.Github {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    /* start behind */
+    left: 40%;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+
+}
+
+.Git-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.Git-button:hover~.Github {
+    transform: translateY(-10px);
+    /* move up */
+    opacity: 1;
+}
+
+
+@media (max-width:768px) {
+    .Hero-Container {
+        gap: 20px;
+        text-align: center;
+    }
+
+    .Image-Card {
+        height: 350px;
+        width: 250px;
+    }
+
+    .Tape {
+        width: 150px;
+    }
+
+    .Hero-Text {
+        font-size: 25px;
+
+    }
+
+    .Image-Card {
+        transform: rotate(-3deg);
+    }
+
+    .Hero-Description {
+        overflow: visible;
+    }
+
+    .Paper-Clip {
+        left: 8%;
+        width: 120px;
+        top: -45px;
+        transform: translateX(-50%) rotate(-90deg);
+        overflow-y: hidden;
+    }
+
+
+}
+
+/* ------------- TABLETS (iPads, landscape + portrait) ------------- */
+@media (max-width:1024px) {
+    .Hero-Container {
+        gap: 60px;
+        text-align: center;
+    }
+
+    .Image-Card {
+        height: 400px;
+        width: 300px;
+        transform: rotate(-2deg);
+    }
+
+    .Tape {
+        width: 180px;
+    }
+
+    .Hero-Description {
+        overflow: visible;
+    }
+
+    .Paper-Clip {
+        left: 8%;
+        width: 150px;
+        top: -55px;
+        transform: translateX(-50%) rotate(-5deg);
+    }
+}

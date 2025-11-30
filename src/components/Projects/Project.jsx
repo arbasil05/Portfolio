@@ -6,8 +6,8 @@ const projects = [
         title: "Trackify",
         desc: "An Academic credit tracker me and my team built for our college...",
         img: "./Mern.png",
-        repo: "#",
-        live: "#",
+        repo: "https://github.com/arbasil05/Trackify",
+        live: "https://trackify-lxxl.vercel.app/",
         leftInfo: "Has 600+ users!",
         rightInfo: "People loved the UI/UX"
     },
@@ -15,7 +15,7 @@ const projects = [
         title: "Diabetica",
         desc: "Diabetes prediction app using logistic regression...",
         img: "./Django.png",
-        repo: "#",
+        repo: "https://github.com/arbasil05/Diabetica---final",
         live: null,
         leftInfo: "Got me into Django",
         rightInfo: "Was a newbie, learnt a lot"
@@ -49,7 +49,7 @@ const Project = () => {
     return (
         <div className="Project-Container">
             <div className="Project-Header">
-                <h1>Projects</h1>
+                <h1>Things I have Built</h1>
             </div>
 
             <div style={{ position: "relative" }}>
@@ -63,13 +63,13 @@ const Project = () => {
                             <div className="Project1">
                                 <h1>{projects[currentPage].title}</h1>
                                 <p className="Project1-Desc">{projects[currentPage].desc}</p>
-                                <img src={projects[currentPage].img} className="Mern" />
+                                <img src={projects[currentPage].img} className="Mern" alt={projects[currentPage].title} loading="lazy" decoding="async" />
                                 <div className="Project1-Button">
-                                    <div className="Project1-Repo">
+                                    <div className="Project1-Repo" onClick={()=>window.open(`${projects[currentPage].repo}`,"_blank")}>
                                         <p>Repository</p>
                                     </div>
                                     {projects[currentPage].live && (
-                                        <div className="Project1-Live">
+                                        <div className="Project1-Live" onClick={()=>window.open(`${projects[currentPage].live}`,"_blank")}>
                                             <p>Live</p>
                                         </div>
                                     )}
@@ -80,11 +80,11 @@ const Project = () => {
                             {/* Navigation Arrows inside the notebook */}
                             <div className="Notebook-Arrows">
                                 <button onClick={prevPage} disabled={currentPage === 0}>
-                                    <img src="./FB Arrow.png" className="Previous" alt="Previous" />
+                                    <img src="/FB Arrow.png" className="Previous" alt="Previous" loading="lazy" decoding="async" />
                                 </button>
 
                                 <button onClick={nextPage} disabled={currentPage === projects.length - 1}>
-                                    <img src="./FB Arrow.png" alt="Next" />
+                                    <img src="/FB Arrow.png" alt="Next" loading="lazy" decoding="async" />
                                 </button>
                             </div>
                         </div>
@@ -92,9 +92,12 @@ const Project = () => {
                         {[...Array(spiralCount)].map((_, index) => (
                             <img
                                 key={index}
-                                src="./spiral.png"
+                                src="/spiral.png"
                                 className="Spiral"
                                 style={{ top: `${index * 22}px` }}
+                                loading="lazy"
+                                decoding="async"
+                                alt="spiral"
                             />
                         ))}
                     </div>

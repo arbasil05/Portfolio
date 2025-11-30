@@ -18,11 +18,11 @@ const Hero = () => {
                 cloud2.style.transform = `translateY(${window.scrollY * -0.45}px)`;
             }
 
-            if(plane){
+            if (plane) {
                 plane.style.transform = `translateY(${window.scrollY * 0.10}px)`;
             }
 
-            if(plane2){
+            if (plane2) {
                 plane2.style.transform = `translateY(${window.scrollY * -0.25}px)`;
             }
 
@@ -39,41 +39,60 @@ const Hero = () => {
             <div className='Hero-Container'>
 
 
-                <img src="./cloud1.png" className='cloud' />
-                <img src="./cloud1.png" className='cloud2' />
-                <img src="./Plane.png" className='Plane' />
-                <img src="./Plane2.png"  className='Plane2'/>
+                <img src="/cloud1.png" className='cloud' alt="" loading="lazy" decoding="async" />
+                <img src="/cloud1.png" className='cloud2' alt="" loading="lazy" decoding="async" />
+                <img src="/Plane.png" className='Plane' alt="" loading="lazy" decoding="async" />
+                <img src="/Plane2.png" className='Plane2' alt="" loading="lazy" decoding="async" />
 
 
                 {/* Polaroid Image Card */}
                 <div className="Image-Card">
                     <div className="Image-Inside-Card">
-                        <img src="public/Hero-Image.jpeg" alt="Basil" />
+                        <img src="/Hero-Image.jpeg" alt="Basil" loading="eager" decoding="async" width="350" height="450" />
                     </div>
-                    <img src="public/tape.png" alt="tape" className="Tape" />
+                    <img src="/tape.png" alt="tape" className="Tape" loading="lazy" decoding="async" />
                     <p className='Image-Name'>Me :)</p>
                 </div>
 
                 <div className='Hero-Text Pencil-Color'>
                     <div className='Intro-Text'>
                         <h1>Hi, I'm Basil</h1>
-                        <p>Chennai, Tamil Nadu</p>
+                        <p>Full Stack Dev</p>
                     </div>
                     <div className='Hero-Description'>
                         <p>Pre-final year CSE Student trying <br />not to be unemployed</p>
-                        <img src="public/Paper-Clip.png" className='Paper-Clip' alt="clip" />
+                        <img src="/Paper-Clip.png" className='Paper-Clip' alt="clip" loading="lazy" decoding="async" />
                     </div>
                     <div className='Button-Parent'>
-                        <div className="button">
-                            Contact Me
-                        </div>
-                        <div className='Github-Button-Container'>
+
+                        {/* Resume Button */}
+                        <div
+                            className='Github-Button-Container Resume-Button-Container'
+                            onClick={() => {
+                                const link = document.createElement("a");
+                                link.href = "/Basil_Resume.pdf"; // put your file name here
+                                link.download = "Basil_Resume.pdf";
+                                link.click();
+                            }}
+                            style={{ cursor: "pointer" }}
+                        >
                             <div className="Git-button">
+                                Resume
+                            </div>
+                            <img src="/Resume.png" className='Resume-Icon' alt="Resume icon" loading="lazy" decoding="async" />
+                        </div>
+
+
+                        {/* Github Button */}
+                        <div className='Github-Button-Container'>
+                            <div className="Git-button" onClick={() => window.open("https://github.com/arbasil05", "_blank")}>
                                 Github
                             </div>
-                            <img src="./Github.png" className='Github' />
+                            <img src="/Github.png" className='Github' alt="Github icon" loading="lazy" decoding="async" />
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </>

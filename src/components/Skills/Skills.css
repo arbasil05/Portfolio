@@ -1,13 +1,20 @@
 .Skills-Header {
     font-family: "Permanent Marker";
     text-align: center;
-    text-decoration: wavy;
-    text-decoration-line: underline;
     font-size: 50px;
 }
 
 .Skills-Container {
     margin-top: 30px;
+    position: relative;
+
+}
+
+.Eraser-Dust{
+    position: absolute;
+    width: 400px;
+    z-index: 1000;
+    left: -6%;
 
 }
 
@@ -54,5 +61,9 @@
 @media (max-width:768px) {
     .Skills-Header {
         font-size: 36px;
+    }
+
+    .Eraser-Dust{
+        display: none;
     }
 }

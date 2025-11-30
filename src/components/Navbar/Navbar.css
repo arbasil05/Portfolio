@@ -27,10 +27,25 @@
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 768px) {
     .Navbar-Container {
         flex-direction: column;
-        gap: 10px; 
+        gap: 10px;
         text-align: center;
     }
 

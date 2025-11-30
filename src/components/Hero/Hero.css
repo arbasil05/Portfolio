@@ -10,6 +10,7 @@
 .cloud {
     position: absolute;
     width: 300px;
+    /* border: 1px solid black; */
     left: 81%;
     z-index: -100;
     top: -60px;
@@ -23,6 +24,7 @@
     top: 300px;
     z-index: 100;
     will-change: transform;
+    /* border: 1px solid black; */
 }
 
 .Plane {
@@ -32,6 +34,7 @@
     top: -50px;
     left: -4%;
     will-change: transform;
+    /* border: 1px solid black; */
 }
 
 .Plane2 {
@@ -39,14 +42,17 @@
     width: 300px;
     z-index: 10000;
     top: 300px;
-    left: 83%;
+    left: 80%;
+    /* border: 1px solid black; */
     will-change: transform;
+
 
 }
 
 .Hero-Text {
     font-size: 40px;
     font-family: 'Permanent Marker';
+    /* border: 1px solid black; */
 }
 
 .Hero-Text p {
@@ -199,14 +205,94 @@
     color: white;
 }
 
+
 .Git-button:hover~.Github {
     transform: translateY(-10px);
     /* move up */
     opacity: 1;
 }
 
+.Resume-Button-Container {
+    position: relative;
+}
+
+.Resume-Icon {
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 20%;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.Resume-Button-Container .Git-button:hover~.Resume-Icon {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+
+/* ------------- TABLETS (iPads, landscape + portrait) ------------- */
+@media (max-width:1024px) {
+    .Hero-Container {
+        gap: 60px;
+        text-align: center;
+    }
+
+    .Image-Card {
+        height: 400px;
+        width: 300px;
+        transform: rotate(-2deg);
+    }
+
+    .Tape {
+        width: 180px;
+    }
+
+    .Hero-Description {
+        overflow: visible;
+    }
+
+
+    .Paper-Clip {
+        left: 8%;
+        width: 150px;
+        top: -55px;
+        transform: translateX(-50%) rotate(-5deg);
+    }
+
+    .cloud {
+        width: 200px;
+        left: 80%;
+        top: -80px;
+    }
+
+    .cloud2 {
+        width: 200px;
+        left: -10%;
+    }
+
+    .Plane {
+        width: 70px;
+    }
+
+    .Plane2 {
+        width: 200px;
+    }
+}
+
 
 @media (max-width:768px) {
+    /* 
+    html,
+    body,
+    #root {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    } */
+
     .Hero-Container {
         gap: 20px;
         text-align: center;
@@ -215,6 +301,7 @@
     .Image-Card {
         height: 350px;
         width: 250px;
+        margin-bottom: 40px;
     }
 
     .Tape {
@@ -242,34 +329,24 @@
         overflow-y: hidden;
     }
 
-
-}
-
-/* ------------- TABLETS (iPads, landscape + portrait) ------------- */
-@media (max-width:1024px) {
-    .Hero-Container {
-        gap: 60px;
-        text-align: center;
+    .cloud {
+        width: 200px;
+        left: 40%;
+        top: -80px;
     }
 
-    .Image-Card {
-        height: 400px;
-        width: 300px;
-        transform: rotate(-2deg);
+    .cloud2 {
+        width: 200px;
+        left: -8%;
     }
 
-    .Tape {
-        width: 180px;
+    .Plane {
+        width: 70px;
     }
 
-    .Hero-Description {
-        overflow: visible;
+    .Plane2 {
+        width: 70px;
     }
 
-    .Paper-Clip {
-        left: 8%;
-        width: 150px;
-        top: -55px;
-        transform: translateX(-50%) rotate(-5deg);
-    }
+
 }

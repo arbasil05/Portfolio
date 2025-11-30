@@ -10,7 +10,7 @@ const Skills = () => {
     },
     {
       title: "Backend",
-      items: ["Express", "Django"],
+      items: ["Express", "Django","Supabase","MongoDB"],
       color: "#A7E6FF"
     },
     {
@@ -22,8 +22,9 @@ const Skills = () => {
 
   return (
     <>
-      <div className='Skills-Container'>
-        <h1 className='Skills-Header'>Skills</h1>
+      <div className='Skills-Container' id='skillz'>
+        <h1 className='Skills-Header'>Stuffs I Know</h1>
+        <img src="./Eraser-Dust.png" loading='lazy' decoding='async' className='Eraser-Dust' alt='eraser dust' />
 
         <div className="Sticky">
           {groups.map((group, index) => {
@@ -45,6 +46,8 @@ const Skills = () => {
                   src="./Push-Pin.png"
                   className="Push-Pin"
                   alt="pin"
+                  loading='lazy'
+                  decoding='async'
                 />
 
                 <h3>{group.title}</h3>

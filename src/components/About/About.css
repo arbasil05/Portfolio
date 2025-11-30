@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Permanent+Marker&display=swap');
+
+.About-Container {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Highlighter {
+  background-color: #fff2008d;
+
+
+}
+
+.paper-shadow-wrapper {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+  max-width: 600px;
+  width: 100%;
+}
+
+.torn-paper {
+  background-color: #f4f1ea;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 40px;
+  min-height: 300px;
+  color: #2d2a26;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.torn-paper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.tape {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 100px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.About-Header h1 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: black;
+}
+
+.About-Desc {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.Mosquito {
+  position: absolute;
+  width: 50px;
+  left: -3%;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.6));
+}
+
+.Mosquito-Blood {
+  position: absolute;
+  width: 50px;
+  left: -3%;
+  z-index: -1000;
+}
+
+.shavings {
+  position: absolute;
+  width: 300px;
+  left: 75%;
+  z-index: 10;
+  transform: rotate(180deg);
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width:768px) {
+  .About-Desc {
+    font-size: 1.2rem;
+  }
+
+  .Mosquito {
+    width: 30px;
+    left: -8%;
+  }
+
+  .Mosquito-Blood {
+    width: 30px;
+    left: -8%;
+    z-index: -1000;
+  }
+
+  .shavings {
+    display: none;
+  }
+
+}

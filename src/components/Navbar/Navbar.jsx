@@ -8,9 +8,9 @@ const Navbar = () => {
       </div>
       <div>
         <ul className='Navbar-Links Pencil-Color'>
-          <li>Me</li>
-          <li>Skillz</li>
-          <li>Hello!</li>
+          <li><a href="#Me" style={{ textDecoration: "none" }}>Me</a></li>
+          <li><a href="#skillz">Skillz</a></li>
+          <li><a href="#contact">Hello!</a></li>
         </ul>
       </div>
     </div>

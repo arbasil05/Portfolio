@@ -1,5 +1,5 @@
 .Skills-Header {
-    font-family: "Permanent Marker";
+    font-family: "Permanent Marker", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     text-align: center;
     font-size: 50px;
 }
@@ -37,7 +37,7 @@
     background-color: #FFEB7F;
     padding: 30px 20px 30px 20px;
     text-align: center;
-    font-family: "Architects Daughter";
+    font-family: "Architects Daughter", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     position: relative;
 }
 

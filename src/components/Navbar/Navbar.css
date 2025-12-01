@@ -7,7 +7,7 @@
 }
 
 .Page-Header {
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker', "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     transform: rotate(-3deg);
     display: inline-block;
     letter-spacing: 2px;
@@ -16,7 +16,7 @@
 }
 
 .Navbar-Links {
-    font-family: 'Architects Daughter';
+    font-family: 'Architects Daughter', "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     list-style: none;
     display: flex;
     gap: 40px;

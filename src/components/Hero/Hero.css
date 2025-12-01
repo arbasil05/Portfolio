@@ -51,7 +51,7 @@
 
 .Hero-Text {
     font-size: 40px;
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker', "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     /* border: 1px solid black; */
 }
 
@@ -116,7 +116,7 @@
 
 .Hero-Description p {
     color: #2f2f2f;
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
 }
 
 .Image-Inside-Card {
@@ -132,7 +132,7 @@
 }
 
 .Image-Name {
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     text-align: center;
     margin-top: 10px;
     font-size: 40px;
@@ -141,7 +141,7 @@
 
 
 .button {
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     font-size: 26px;
     background-color: white;
     border: 2px solid black;
@@ -174,7 +174,7 @@
 .Git-button {
     position: relative;
     z-index: 2;
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     font-size: 26px;
     background-color: white;
     border: 2px solid black;

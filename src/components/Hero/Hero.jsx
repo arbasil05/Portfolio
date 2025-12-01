@@ -39,10 +39,10 @@ const Hero = () => {
             <div className='Hero-Container'>
 
 
-                <img src="/cloud1.png" className='cloud' alt="" loading="lazy" decoding="async" />
-                <img src="/cloud1.png" className='cloud2' alt="" loading="lazy" decoding="async" />
-                <img src="/Plane.png" className='Plane' alt="" loading="lazy" decoding="async" />
-                <img src="/Plane2.png" className='Plane2' alt="" loading="lazy" decoding="async" />
+                <img src="/cloud1.webp" className='cloud' alt="" loading="lazy" decoding="async" />
+                <img src="/cloud1.webp" className='cloud2' alt="" loading="lazy" decoding="async" />
+                <img src="/Plane.webp" className='Plane' alt="" loading="lazy" decoding="async" />
+                <img src="/Plane2.webp" className='Plane2' alt="" loading="lazy" decoding="async" />
 
 
                 {/* Polaroid Image Card */}
@@ -50,7 +50,7 @@ const Hero = () => {
                     <div className="Image-Inside-Card">
                         <img src="/Hero-Image.jpeg" alt="Basil" loading="eager" decoding="async" width="350" height="450" />
                     </div>
-                    <img src="/tape.png" alt="tape" className="Tape" loading="lazy" decoding="async" />
+                    <img src="/tape.webp" alt="tape" className="Tape" loading="lazy" decoding="async" />
                     <p className='Image-Name'>Me :)</p>
                 </div>
 
@@ -61,7 +61,7 @@ const Hero = () => {
                     </div>
                     <div className='Hero-Description'>
                         <p>Pre-final year CSE Student trying <br />not to be unemployed</p>
-                        <img src="/Paper-Clip.png" className='Paper-Clip' alt="clip" loading="lazy" decoding="async" />
+                        <img src="/Paper-Clip.webp" className='Paper-Clip' alt="clip" loading="lazy" decoding="async" />
                     </div>
                     <div className='Button-Parent'>
 
@@ -79,7 +79,7 @@ const Hero = () => {
                             <div className="Git-button">
                                 Resume
                             </div>
-                            <img src="/Resume.png" className='Resume-Icon' alt="Resume icon" loading="lazy" decoding="async" />
+                            <img src="/Resume.webp" className='Resume-Icon' alt="Resume icon" loading="lazy" decoding="async" />
                         </div>
 
 
@@ -88,7 +88,7 @@ const Hero = () => {
                             <div className="Git-button" onClick={() => window.open("https://github.com/arbasil05", "_blank")}>
                                 Github
                             </div>
-                            <img src="/Github.png" className='Github' alt="Github icon" loading="lazy" decoding="async" />
+                            <img src="/Github.webp" className='Github' alt="Github icon" loading="lazy" decoding="async" />
                         </div>
 
                     </div>

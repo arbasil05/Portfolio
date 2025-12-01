@@ -24,7 +24,7 @@ const Skills = () => {
     <>
       <div className='Skills-Container' id='skillz'>
         <h1 className='Skills-Header'>Stuffs I Know</h1>
-        <img src="./Eraser-Dust.png" loading='lazy' decoding='async' className='Eraser-Dust' alt='eraser dust' />
+        <img src="./Eraser-Dust.webp" loading='lazy' decoding='async' className='Eraser-Dust' alt='eraser dust' />
 
         <div className="Sticky">
           {groups.map((group, index) => {
@@ -43,7 +43,7 @@ const Skills = () => {
               >
                 {/* Push pin for each note */}
                 <img
-                  src="./Push-Pin.png"
+                  src="./Push-Pin.webp"
                   className="Push-Pin"
                   alt="pin"
                   loading='lazy'

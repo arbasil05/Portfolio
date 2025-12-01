@@ -1,6 +1,6 @@
 .Contact-Header {
     font-size: 30px;
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker', "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@
     width: 650px;
     background-color: white;
     padding: 50px 20px 30px 20px;
-    font-family: "Architects Daughter";
+    font-family: "Architects Daughter", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;

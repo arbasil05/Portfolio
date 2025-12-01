@@ -5,7 +5,7 @@ const projects = [
     {
         title: "Trackify",
         desc: "An Academic credit tracker me and my team built for our college...",
-        img: "./Mern.png",
+        img: "./Mern.webp",
         repo: "https://github.com/arbasil05/Trackify",
         live: "https://trackify-lxxl.vercel.app/",
         leftInfo: "Has 600+ users!",
@@ -14,7 +14,7 @@ const projects = [
     {
         title: "Diabetica",
         desc: "Diabetes prediction app using logistic regression...",
-        img: "./Django.png",
+        img: "./Django.webp",
         repo: "https://github.com/arbasil05/Diabetica---final",
         live: null,
         leftInfo: "Got me into Django",
@@ -80,11 +80,11 @@ const Project = () => {
                             {/* Navigation Arrows inside the notebook */}
                             <div className="Notebook-Arrows">
                                 <button onClick={prevPage} disabled={currentPage === 0}>
-                                    <img src="/FB Arrow.png" className="Previous" alt="Previous" loading="lazy" decoding="async" />
+                                    <img src="/FB Arrow.webp" className="Previous" alt="Previous" loading="lazy" decoding="async" />
                                 </button>
 
                                 <button onClick={nextPage} disabled={currentPage === projects.length - 1}>
-                                    <img src="/FB Arrow.png" alt="Next" loading="lazy" decoding="async" />
+                                    <img src="/FB Arrow.webp" alt="Next" loading="lazy" decoding="async" />
                                 </button>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ const Project = () => {
                         {[...Array(spiralCount)].map((_, index) => (
                             <img
                                 key={index}
-                                src="/spiral.png"
+                                src="/spiral.webp"
                                 className="Spiral"
                                 style={{ top: `${index * 22}px` }}
                                 loading="lazy"

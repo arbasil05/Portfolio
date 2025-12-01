@@ -37,7 +37,7 @@ const Contact = () => {
                 {positions.map((leftPos, i) => (
                     <img
                         key={i}
-                        src="./Binder.png"
+                        src="./Binder.webp"
                         className="Binder"
                         style={{ left: `${leftPos}%` }}
                         loading='lazy'
@@ -52,7 +52,7 @@ const Contact = () => {
                     <div className="Contact-Item">
                         <div className="Item-Header">
                             <p>Email</p>
-                            <img src="./Mail.png" alt="mail icon" loading='lazy' decoding='async' />
+                            <img src="./Mail.webp" alt="mail icon" loading='lazy' decoding='async' />
                         </div>
                         <p className="Item-Value">arbasil64.ab@gmail.com</p>
                     </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                     <div className="Contact-Item">
                         <div className="Item-Header">
                             <p>LinkedIn</p>
-                            <img src="./LinkedIn.png" alt="LinkedIn" id="LinkedIn" loading='lazy' decoding='async' />
+                            <img src="./LinkedIn.webp" alt="LinkedIn" id="LinkedIn" loading='lazy' decoding='async' />
                         </div>
                         <p className="Item-Value">
                             <a href="https://www.linkedin.com/in/abdur-rahman-basil-14114a288/" target="_blank">
@@ -74,7 +74,7 @@ const Contact = () => {
                     <div className="Contact-Item">
                         <div className="Item-Header">
                             <p>GitHub</p>
-                            <img src="./Github_Contact.png" alt="Github" id="Github-Icon" loading='lazy' decoding='async' />
+                            <img src="./Github_Contact.webp" alt="Github" id="Github-Icon" loading='lazy' decoding='async' />
                         </div>
                         <p className="Item-Value">
                             <a href="https://github.com/arbasil05" target="_blank">
@@ -87,7 +87,7 @@ const Contact = () => {
                     <div className="Contact-Item">
                         <div className="Item-Header">
                             <p>Leetcode</p>
-                            <img src="./Leetcode.png" alt="Leetcode" id="Github-Icon" loading='lazy' decoding='async' />
+                            <img src="./Leetcode.webp" alt="Leetcode" id="Github-Icon" loading='lazy' decoding='async' />
                         </div>
                         <p className="Item-Value">
                             <a href="https://leetcode.com/AR_Basil/" target="_blank">
@@ -96,12 +96,12 @@ const Contact = () => {
                         </p>
                     </div>
 
-                    <img src="./Pen.png" loading='lazy' decoding='async' className="Pen" alt='pen' />
-                    <img src="./Scribble.png" loading='lazy' decoding='async' className="Scribble" alt='scribble' />
+                    <img src="./Pen.webp" loading='lazy' decoding='async' className="Pen" alt='pen' />
+                    <img src="./Scribble.webp" loading='lazy' decoding='async' className="Scribble" alt='scribble' />
 
                 </div>
             </div>
-            <img src="./Stain.png" loading='lazy' decoding='async' className="Stain" alt='stain' />
+            <img src="./Stain.webp" loading='lazy' decoding='async' className="Stain" alt='stain' />
         </div>
     );
 };

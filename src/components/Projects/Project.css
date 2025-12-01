@@ -1,5 +1,5 @@
 .Project-Header h1 {
-    font-family: "Permanent Marker";
+    font-family: "Permanent Marker", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     text-align: center;
     font-size: 50px;
     margin-bottom: 40px;
@@ -18,7 +18,7 @@
     width: 350px;
     background-color: white;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     padding-top: 20px;
 }
 
@@ -37,7 +37,7 @@
     position: absolute;
     left: -100%;
     top: 120px;
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     font-size: 40px;
     /* transform: rotate(-15deg); */
 }
@@ -46,13 +46,13 @@
     position: absolute;
     top: 80px;
     left: 130%;
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
 
 }
 
 .project-info-right{
     width: 170px;
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     font-size: 40px;
     /* transform: rotate(15deg); */
 }
@@ -89,7 +89,7 @@
 }
 
 .Project1-Repo {
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     font-size: 20px;
     background-color: white;
     border: 2px solid black;
@@ -116,7 +116,7 @@
 }
 
 .Project1-Live {
-    font-family: "Reenie Beanie";
+    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
     font-size: 20px;
     background-color: white;
     border: 2px solid black;

@@ -61,7 +61,7 @@ const About = () => {
       <div className="About-Header">
         <h1>Myself</h1>
       </div>
-      <img src="./shavings.png" loading='lazy' decoding='async' className='shavings' alt='shavings' />
+      <img src="./shavings.webp" loading='lazy' decoding='async' className='shavings' alt='shavings' />
       <div className="paper-shadow-wrapper">
         <div className="tape"></div>
         <div className="torn-paper" ref={paperRef}>
@@ -76,15 +76,15 @@ const About = () => {
       </div>
 
       {
-        !click && <img src='./Mosquito1.png' className='Mosquito' loading='lazy' decoding='async' alt='mosquito' onClick={() => setClick(true)} style={{ cursor: "pointer" }} />
+        !click && <img src='./Mosquito1.webp' className='Mosquito' loading='lazy' decoding='async' alt='mosquito' onClick={() => setClick(true)} style={{ cursor: "pointer" }} />
       }
 
       {
         click && (
             <>
             
-            <img src='./Mosquito.png' loading='lazy' decoding='async' className='Mosquito' alt='mosquito' />
-            <img src="./Blood.png" loading='lazy' decoding='async' className='Mosquito-Blood' alt='blood' />
+            <img src='./Mosquito.webp' loading='lazy' decoding='async' className='Mosquito' alt='mosquito' />
+            <img src="./Blood.webp" loading='lazy' decoding='async' className='Mosquito-Blood' alt='blood' />
           </>
         )
 

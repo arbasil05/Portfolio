@@ -6,19 +6,21 @@ import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import Project from './components/Projects/Project'
 import Skills from './components/Skills/Skills'
+import Wave from './components/Waves/Wave'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Project/>
-      <Contact/>
-      <Footer/>
-    
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Project />
+      <Contact />
+      <Footer />
+      <Wave/>
+
     </>
   )
 }

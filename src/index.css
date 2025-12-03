@@ -22,6 +22,24 @@ body {
   
 }
 
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 35px;          /* change thickness */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: url('/scrollbar3.webp');
+  background-size: contain;   /* prevents stretching */
+  background-repeat: no-repeat;
+  border-radius: 6px;       /* optional */
+}
+
 
 
 .Pencil-Color{
@@ -32,4 +50,10 @@ body {
   body{
     padding: 30px 40px 20px 40px;
   }
+}
+
+@media (max-width:1366px){
+  ::-webkit-scrollbar {
+  width: 25px;          /* change thickness */
+}
 }

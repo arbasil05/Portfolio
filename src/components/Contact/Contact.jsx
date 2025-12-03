@@ -65,7 +65,7 @@ const Contact = () => {
                         </div>
                         <p className="Item-Value">
                             <a href="https://www.linkedin.com/in/abdur-rahman-basil-14114a288/" target="_blank">
-                                Click Here
+                                 Visit my LinkedIn profile
                             </a>
                         </p>
                     </div>

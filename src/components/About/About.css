@@ -12,7 +12,14 @@
 }
 
 .Highlighter {
-  background-color: #fff2008d;
+  background-image: linear-gradient(to right, #ffeb3b, #ffeb3b);
+
+  /* 2. Prevent the background from repeating */
+  background-repeat: no-repeat;
+
+  /* 3. Position it (usually bottom left for text underlining/highlighting) */
+  background-position: 0% 100%;
+  margin-left: 5px;
 
 
 }
@@ -101,6 +108,18 @@
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 }
 
+.About-SVG svg {
+  width: 100%;
+}
+
+.About-SVG {
+  position: absolute;
+  width: 190px;
+  top: -190px;
+  left: 13%;
+
+}
+
 @media (max-width:768px) {
   .About-Desc {
     font-size: 1.2rem;
@@ -119,6 +138,11 @@
 
   .shavings {
     display: none;
+  }
+
+
+  .About-SVG {
+    width: 150px;
   }
 
 }

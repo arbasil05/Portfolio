@@ -72,6 +72,11 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transform: rotate(-3deg);
     padding: 20px 20px 80px 20px;
+    transition: all 0.2s ease-out;
+}
+
+.Image-Card:hover{
+    transform: rotate(3deg);
 }
 
 .Tape {

@@ -8,7 +8,7 @@ const Navbar = () => {
       </div>
       <div>
         <ul className='Navbar-Links Pencil-Color'>
-          <li><a href="#Me" style={{ textDecoration: "none" }}>Me</a></li>
+          <li><a href="#Me">Me</a></li>
           <li><a href="#skillz">Skillz</a></li>
           <li><a href="#contact">Hello!</a></li>
         </ul>

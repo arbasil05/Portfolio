@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Skills.css'
 
 const Skills = () => {
@@ -10,7 +11,7 @@ const Skills = () => {
     },
     {
       title: "Backend",
-      items: ["Express", "Django","Supabase","MongoDB"],
+      items: ["Express", "Django", "Supabase", "MongoDB"],
       color: "#A7E6FF"
     },
     {
@@ -20,11 +21,13 @@ const Skills = () => {
     }
   ];
 
+
   return (
     <>
       <div className='Skills-Container' id='skillz'>
         <h1 className='Skills-Header'>Stuffs I Know</h1>
-        <img src="./Eraser-Dust.webp" loading='lazy' decoding='async' className='Eraser-Dust' alt='eraser dust' />
+        <img src="./Balloon.webp" alt="Balloon" className='Balloon'  loading="lazy"
+                                            decoding="async" />
 
         <div className="Sticky">
           {groups.map((group, index) => {

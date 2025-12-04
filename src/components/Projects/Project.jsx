@@ -22,8 +22,6 @@ const projects = [
     },
 ];
 
-
-
 const Project = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const notebookRef = useRef(null);
@@ -63,29 +61,61 @@ const Project = () => {
                             <div className="Project1">
                                 <h1>{projects[currentPage].title}</h1>
                                 <p className="Project1-Desc">{projects[currentPage].desc}</p>
-                                <img src={projects[currentPage].img} className="Mern" alt={projects[currentPage].title} loading="lazy" decoding="async" />
+                                <img
+                                    src={projects[currentPage].img}
+                                    className="Mern"
+                                    alt={projects[currentPage].title}
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+
                                 <div className="Project1-Button">
-                                    <div className="Project1-Repo" onClick={()=>window.open(`${projects[currentPage].repo}`,"_blank")}>
+                                    <div
+                                        className="Project1-Repo"
+                                        onClick={() =>
+                                            window.open(`${projects[currentPage].repo}`, "_blank")
+                                        }
+                                    >
                                         <p>Repository</p>
                                     </div>
+
                                     {projects[currentPage].live && (
-                                        <div className="Project1-Live" onClick={()=>window.open(`${projects[currentPage].live}`,"_blank")}>
+                                        <div
+                                            className="Project1-Live"
+                                            onClick={() =>
+                                                window.open(`${projects[currentPage].live}`, "_blank")
+                                            }
+                                        >
                                             <p>Live</p>
                                         </div>
                                     )}
-
                                 </div>
                             </div>
 
-                            {/* Navigation Arrows inside the notebook */}
+                            {/* ⭐ Conditional Arrows */}
                             <div className="Notebook-Arrows">
-                                <button onClick={prevPage} disabled={currentPage === 0}>
-                                    <img src="/FB Arrow.webp" className="Previous" alt="Previous" loading="lazy" decoding="async" />
-                                </button>
+                                {currentPage > 0 && (
+                                    <button onClick={prevPage}>
+                                        <img
+                                            src="/FB Arrow.webp"
+                                            className="Previous"
+                                            alt="Previous"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </button>
+                                )}
 
-                                <button onClick={nextPage} disabled={currentPage === projects.length - 1}>
-                                    <img src="/FB Arrow.webp" alt="Next" loading="lazy" decoding="async" />
-                                </button>
+                                {currentPage < projects.length - 1 && (
+                                    <button onClick={nextPage}>
+                                        <img
+                                            src="/FB Arrow.webp"
+                                            alt="Next"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </button>
+                                )}
                             </div>
                         </div>
 
@@ -102,9 +132,13 @@ const Project = () => {
                         ))}
                     </div>
                 </div>
+
                 <div className="project-info-right">
-                   <p>{projects[currentPage].rightInfo}</p>
+                    <p>{projects[currentPage].rightInfo}</p>
                 </div>
+
+                <img src="./Cat.webp" alt="Cat" className="Cat"  loading="lazy"
+                                            decoding="async" />
             </div>
         </div>
     );

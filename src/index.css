@@ -9,56 +9,74 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin; /* Firefox fallback */
+  scrollbar-color: #2f2f2f transparent;
 }
 
 body {
   background-color: #fdfbf7;
-
-  background-image: linear-gradient(#e1e1e1 1px, transparent 1px),
-
+  background-image: 
+    linear-gradient(#e1e1e1 1px, transparent 1px),
     linear-gradient(90deg, #e1e1e1 1px, transparent 1px);
-
   background-size: 100% 2rem, 2rem 100%;
   padding: 30px 80px 20px 80px;
-
 }
 
-/* Entire scrollbar */
+/* --- Responsive Scrollbar (Fixed) --- */
 ::-webkit-scrollbar {
-  width: 35px;
-  /* change thickness */
+  width: 35px; /* Base width */
 }
 
-/* Track (background) */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Handle (thumb) */
 ::-webkit-scrollbar-thumb {
-  background: url('/scrollbar3.webp');
-  background-size: contain;
-  /* prevents stretching */
+  background-image: url('/scrollbar3.webp');
+  background-size: 100% 100%; /* Stretches image to fill thumb completely */
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 6px;
-  /* optional */
+  border: 2px solid transparent;
+  background-clip: content-box; /* Prevents border from overlapping image */
 }
 
-
-
-.Pencil-Color {
-  color: #2f2f2f;
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
 }
 
-@media (max-width:768px) {
+/* Mobile & Tablets (≤768px) */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
   body {
     padding: 30px 40px 20px 40px;
   }
 }
 
-@media (max-width:1366px) {
+/* Small Laptops (≤1366px) */
+@media (max-width: 1366px) {
   ::-webkit-scrollbar {
     width: 25px;
-    /* change thickness */
   }
+}
+
+/* Full HD Monitors (1367px-1920px) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  ::-webkit-scrollbar {
+    width: 40px;
+  }
+}
+
+/* Large/4K Monitors (≥1921px) */
+@media (min-width: 1921px) {
+  ::-webkit-scrollbar {
+    width: 50px;
+  }
+}
+
+/* Pencil color class */
+.Pencil-Color {
+  color: #2f2f2f;
 }

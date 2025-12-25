@@ -62,6 +62,9 @@ const About = () => {
         <h1>Myself</h1>
       </div>
       <img src="./shavings.webp" loading='lazy' decoding='async' className='shavings' alt='shavings' />
+      <video autoPlay loop muted playsInline className='video' preload='auto'>
+        <source src='./Knight.webm' type='video/webm' />
+      </video>
       <div className="paper-shadow-wrapper">
         <div className="tape"></div>
         <div className="torn-paper" ref={paperRef}>
@@ -81,8 +84,8 @@ const About = () => {
 
       {
         click && (
-            <>
-            
+          <>
+
             <img src='./Mosquito.webp' loading='lazy' decoding='async' className='Mosquito' alt='mosquito' />
             <img src="./Blood.webp" loading='lazy' decoding='async' className='Mosquito-Blood' alt='blood' />
           </>

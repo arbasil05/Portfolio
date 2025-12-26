@@ -7,6 +7,14 @@
     position: relative;
 }
 
+.video2{
+    position: absolute;
+    top: 56px;
+    left: 40%;
+    width: 400px;
+    z-index: 1;
+}
+
 .cloud {
     position: absolute;
     width: 300px;

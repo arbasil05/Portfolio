@@ -44,6 +44,10 @@ const Hero = () => {
                 <img src="/Plane.webp" className='Plane' alt="" loading="lazy" decoding="async" />
                 <img src="/Plane2.webp" className='Plane2' alt="" loading="lazy" decoding="async" />
 
+                <video autoPlay loop muted playsInline className='video2'>
+                    <source src='./waving.webm'/>
+                </video>
+
 
                 {/* Polaroid Image Card */}
                 <div className="Image-Card">

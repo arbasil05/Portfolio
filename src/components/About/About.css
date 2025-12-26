@@ -140,3 +140,9 @@
   }
 
 }
+
+@media (max-width:1024px){
+  .video{
+    display: none;
+  }
+}

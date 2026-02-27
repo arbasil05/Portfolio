@@ -263,6 +263,10 @@
         text-align: center;
     }
 
+    .Stamp{
+        width: 80px;
+    }
+
     .video2{
         display: none;
     }
@@ -319,6 +323,10 @@
         padding: 0;
         overflow-x: hidden;
     } */
+
+    .Stamp{
+        width: 70px;
+    }
 
     .Hero-Container {
         gap: 20px;

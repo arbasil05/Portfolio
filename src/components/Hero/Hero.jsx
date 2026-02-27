@@ -58,7 +58,7 @@ const Hero = () => {
                 <div className="Image-Card">
                     <div className="Image-Inside-Card">
                         <img
-                            src="/Hero-Image.jpeg"
+                            src="/Hero-Image.webp"
                             alt="Basil"
                             loading="eager"
                             decoding="async"

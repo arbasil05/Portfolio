@@ -62,7 +62,7 @@ const About = () => {
         <h1>Myself</h1>
       </div>
       <img src="./shavings.webp" loading='lazy' decoding='async' className='shavings' alt='shavings' />
-      <video autoPlay loop muted playsInline className='video' preload='auto'>
+      <video autoPlay loop muted playsInline className='video' preload='metadata'>
         <source src='./Knight.webm' type='video/webm' />
       </video>
       <div className="paper-shadow-wrapper">

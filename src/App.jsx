@@ -1,14 +1,15 @@
-import { useEffect } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import './App.css'
-import About from './components/About/About'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
-import Project from './components/Projects/Project'
-import Skills from './components/Skills/Skills'
-import Wave from './components/Waves/Wave'
 import Lenis from 'lenis'
+
+const About = lazy(() => import('./components/About/About'))
+const Skills = lazy(() => import('./components/Skills/Skills'))
+const Project = lazy(() => import('./components/Projects/Project'))
+const Contact = lazy(() => import('./components/Contact/Contact'))
+const Footer = lazy(() => import('./components/Footer/Footer'))
+const Wave = lazy(() => import('./components/Waves/Wave'))
 
 function App() {
 
@@ -26,12 +27,14 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
-      <Footer />
-      <Wave />
+      <Suspense fallback={null}>
+        <About />
+        <Skills />
+        <Project />
+        <Contact />
+        <Footer />
+        <Wave />
+      </Suspense>
 
     </>
   )

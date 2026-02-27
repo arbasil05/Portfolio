@@ -11,7 +11,7 @@ const Skills = () => {
     },
     {
       title: "Backend",
-      items: ["Express", "Django", "Supabase", "MongoDB"],
+      items: ["Express", "Supabase", "MongoDB"],
       color: "#A7E6FF"
     },
     {

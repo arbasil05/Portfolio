@@ -33,21 +33,22 @@
     left: -6%;
 }
 
-.project-info-left {
-    position: absolute;
-    left: -100%;
-    top: 120px;
-    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
-    font-size: 40px;
+.project-info-left,
+.project-info-right {
+    display: none;
 }
 
-.project-info-right {
-    position: absolute;
-    top: 80px;
-    left: 130%;
-    font-family: "Reenie Beanie", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
-    width: 170px;
-    font-size: 40px;
+.Project-Highlights {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.Project-Marker {
+    background-color: #fff2008d;
+    padding: 2px 6px;
 }
 
 .Project1 {
@@ -197,11 +198,6 @@
     .Spiral {
         top: 0px;
         left: -7%;
-    }
-
-    .project-info-left,
-    .project-info-right {
-        display: none;
     }
 
     .Cat {

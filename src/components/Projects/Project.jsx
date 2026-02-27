@@ -7,18 +7,18 @@ const projects = [
         desc: "An Academic credit tracker me and my team built for our college...",
         img: "./Mern.webp",
         repo: "https://github.com/arbasil05/Trackify",
-        live: "https://trackify-lxxl.vercel.app/",
-        leftInfo: "Has 600+ users!",
-        rightInfo: "People loved the UI/UX"
+        live: "https://trackify.arbasil.me/",
+        leftInfo: "800+ active users",
+        rightInfo: "Loved for its UI/UX"
     },
     {
-        title: "Diabetica",
-        desc: "Diabetes prediction app using logistic regression...",
-        img: "./Django.webp",
-        repo: "https://github.com/arbasil05/Diabetica---final",
+        title: "Billing App",
+        desc: "A full-stack invoicing app built with Express and MongoDB for generating and managing bills...",
+        img: null,
+        repo: "https://github.com/arbasil05/Billing-App",
         live: null,
-        leftInfo: "Got me into Django",
-        rightInfo: "Was a newbie, learnt a lot"
+        leftInfo: "Backend only",
+        rightInfo: "Auth & CRUD flow"
     },
 ];
 
@@ -51,9 +51,6 @@ const Project = () => {
             </div>
 
             <div style={{ position: "relative" }}>
-                <div className="project-info-left">
-                    <p>{projects[currentPage].leftInfo}</p>
-                </div>
 
                 <div>
                     <div className="Flip-Parent">
@@ -61,13 +58,20 @@ const Project = () => {
                             <div className="Project1">
                                 <h1>{projects[currentPage].title}</h1>
                                 <p className="Project1-Desc">{projects[currentPage].desc}</p>
-                                <img
-                                    src={projects[currentPage].img}
-                                    className="Mern"
-                                    alt={projects[currentPage].title}
-                                    loading="lazy"
-                                    decoding="async"
-                                />
+                                {projects[currentPage].img && (
+                                    <img
+                                        src={projects[currentPage].img}
+                                        className="Mern"
+                                        alt={projects[currentPage].title}
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                )}
+
+                                <div className="Project-Highlights">
+                                    <p><span className="Project-Marker">{projects[currentPage].leftInfo}</span></p>
+                                    <p><span className="Project-Marker">{projects[currentPage].rightInfo}</span></p>
+                                </div>
 
                                 <div className="Project1-Button">
                                     <div
@@ -131,10 +135,6 @@ const Project = () => {
                             />
                         ))}
                     </div>
-                </div>
-
-                <div className="project-info-right">
-                    <p>{projects[currentPage].rightInfo}</p>
                 </div>
 
                 <img src="./Cat.webp" alt="Cat" className="Cat"  loading="lazy"

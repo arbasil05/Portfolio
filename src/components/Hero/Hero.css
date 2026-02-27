@@ -7,6 +7,15 @@
     position: relative;
 }
 
+.Stamp{
+    position: absolute;
+    width: 100px;
+    z-index: 1000;
+    left: 66%;
+    top: 79%;
+    transform: rotate(-19deg);
+}
+
 .video2{
     position: absolute;
     top: 56px;

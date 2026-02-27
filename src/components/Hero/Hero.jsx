@@ -66,6 +66,7 @@ const Hero = () => {
                             height="450"
                         />
                     </div>
+                    <img src="/Stamp.webp" alt="Stamp" className='Stamp' loading='lazy' decoding='async' />
                     <img src="/tape.webp" alt="tape" className="Tape" loading="lazy" decoding="async" />
                     <p className='Image-Name'>Me :)</p>
                 </div>

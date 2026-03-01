@@ -95,10 +95,7 @@ const Hero = () => {
                         <div
                             className='Github-Button-Container Resume-Button-Container'
                             onClick={() => {
-                                const link = document.createElement("a");
-                                link.href = "/Basil_Resume.pdf";
-                                link.download = "Basil_Resume.pdf";
-                                link.click();
+                                window.open("/Resume.pdf", "_blank");
                             }}
                             style={{ cursor: "pointer" }}
                         >

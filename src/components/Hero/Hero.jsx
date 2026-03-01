@@ -16,6 +16,12 @@ const Hero = () => {
         setIsPlaying(false);
     };
 
+    const handleLoadedMetadata = () => {
+        if (videoRef.current) {
+            videoRef.current.currentTime = 0.5;
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             const cloud1 = document.querySelector('.cloud');
@@ -46,6 +52,7 @@ const Hero = () => {
                     ref={videoRef}
                     onClick={handleVideoClick}
                     onEnded={handleVideoEnded}
+                    onLoadedMetadata={handleLoadedMetadata}
                     muted
                     playsInline
                     className='video2'

@@ -1,0 +1,31 @@
+.Theme-Toggle {
+    background: none;
+    border: 2px solid var(--pencil-color);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    cursor: pointer;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Architects Daughter", "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
+    font-size: 18px;
+    color: var(--pencil-color);
+    transition: var(--theme-transition);
+    position: relative;
+}
+
+.Theme-Toggle:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    border-radius: 240px 15px 225px 20px / 10px 230px 25px 210px;
+}
+
+.Theme-Toggle-Icon {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.4s ease;
+}
+
+.Theme-Toggle:hover .Theme-Toggle-Icon {
+    transform: rotate(20deg);
+}

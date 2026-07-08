@@ -4,21 +4,30 @@ import "./Project.css";
 const projects = [
     {
         title: "Trackify",
-        desc: "An Academic credit tracker me and my team built for our college...",
+        desc: "An academic tracking platform me and my team built for our college.",
         img: "./Mern.webp",
-        repo: "https://github.com/arbasil05/Trackify",
+        repo: "https://github.com/arbasil05/trackify",
         live: "https://trackify.arbasil.me/",
-        leftInfo: "800+ active users",
-        rightInfo: "Loved for its UI/UX"
+        leftInfo: "1,000+ students",
+        rightInfo: "215K+ API requests"
     },
     {
-        title: "Billing App",
-        desc: "A full-stack invoicing app built with Express and MongoDB for generating and managing bills...",
+        title: "Code Execution Engine",
+        desc: "A sandboxed code runner using FastAPI, Redis queues, and Docker containers with warm-pooling.",
         img: null,
-        repo: "https://github.com/arbasil05/Billing-App",
+        repo: "https://github.com/arbasil05/Sandboxed-Code-Execution-Engine",
         live: null,
-        leftInfo: "Backend only",
-        rightInfo: "Auth & CRUD flow"
+        leftInfo: null,
+        rightInfo: "FastAPI · Redis · Docker"
+    },
+    {
+        title: "Club Management",
+        desc: "A platform for managing memberships, events, and attendance with OTP verification and role-based access.",
+        img: null,
+        repo: "https://github.com/arbasil05/Club-Management",
+        live: null,
+        leftInfo: "Role-based workflow",
+        rightInfo: "MERN Stack"
     },
 ];
 
@@ -69,8 +78,12 @@ const Project = () => {
                                 )}
 
                                 <div className="Project-Highlights">
-                                    <p><span className="Project-Marker">{projects[currentPage].leftInfo}</span></p>
-                                    <p><span className="Project-Marker">{projects[currentPage].rightInfo}</span></p>
+                                    {projects[currentPage].leftInfo && (
+                                        <p><span className="Project-Marker">{projects[currentPage].leftInfo}</span></p>
+                                    )}
+                                    {projects[currentPage].rightInfo && (
+                                        <p><span className="Project-Marker">{projects[currentPage].rightInfo}</span></p>
+                                    )}
                                 </div>
 
                                 <div className="Project1-Button">

@@ -6,18 +6,23 @@ const Skills = () => {
   const groups = [
     {
       title: "Frontend",
-      items: ["React", "HTML / CSS / JavaScript", "Tailwind CSS", "TypeScript", "Shadcn/UI"],
-      color: "#FFF475"
+      items: ["React.js", "HTML5", "CSS3", "Tailwind CSS"],
+      color: "#FFD6A5"
     },
     {
       title: "Backend",
-      items: ["Express", "Supabase", "MongoDB"],
+      items: ["Django", "Node.js", "Express.js", "FastAPI", "REST APIs"],
       color: "#A7E6FF"
     },
     {
-      title: "Tools & Hosting",
-      items: ["Git & GitHub", "Vercel", "Render"],
+      title: "Databases",
+      items: ["MongoDB", "MySQL", "PostgreSQL"],
       color: "#C8F7C5"
+    },
+    {
+      title: "Tools & Platforms",
+      items: ["Git & GitHub", "Docker", "Redis", "Postman"],
+      color: "#E8C4F7"
     }
   ];
 

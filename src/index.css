@@ -11,6 +11,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin; /* Firefox fallback */
   scrollbar-color: #2f2f2f transparent;
+  overflow-x: hidden;
 }
 
 body {

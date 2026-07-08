@@ -67,7 +67,7 @@
         left: -5%;
     }
     to{
-        left: 90%;
+        left: calc(100% - 30px);
     }
 }
 
@@ -85,15 +85,4 @@
         top: 90%;
     }
 
-}
-
-@media (max-width:1366px){
-    @keyframes move{
-        from{
-            left: -5%;
-        }
-        to{
-            left: 95%;
-        }
-    }
 }
